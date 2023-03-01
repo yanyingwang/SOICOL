@@ -1,5 +1,5 @@
 #lang info
-(define collection "significance-of-imposing-chinese-as-interface-of-lisp")
+(define collection "soicaiol")
 (define deps '("base"))
 (define build-deps '("scribble-lib" "racket-doc" "rackunit-lib"))
 (define scribblings '(("scribblings/index.scrbl" ())))
