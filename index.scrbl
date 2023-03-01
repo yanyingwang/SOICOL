@@ -6,18 +6,18 @@
 
 
 @defmodule[ming #:lang]
-Significance Of Imposing Chinese As Interface Of Lisp(中文对于Lisp编程语言的意义)
+Significance Of Imposing Chinese As the Interface Of Lisp(中文对于Lisp编程语言的意义).
 
 @(table-of-contents)
 @include-section["qianyan.scrbl"]
 @include-section["zhaiyao.scrbl"]
 @include-section["xulun.scrbl"]
 @include-section["fenxi.scrbl"]
-@include-section["sheji.scrbl"]
-@include-section["xiangxi.scrbl"]
+@include-section["shixian.scrbl"]
 @include-section["jielyun.scrbl"]
 
 @index-section[]
+
 @(bibliography
   (bib-entry #:key "liyingzi18"
              #:author "李英姿"
@@ -64,7 +64,27 @@ Significance Of Imposing Chinese As Interface Of Lisp(中文对于Lisp编程语�
              #:date "2004"
              #:url "https://www.aisixiang.com/data/127276.html")
 
+  (bib-entry #:key "abelson96"
+             #:author "Harold Abelson, Gerald Jay Sussman"
+             #:title "Structure and Interpretation of Computer Programs"
+             #:date "1996"
+             #:url "https://www.aisixiang.com/data/127276.html")
 
+  (bib-entry #:key "matthew21"
+             #:author "Matthew Flatt"
+             #:title "Racket Compiler and Runtime Status: January 2021"
+             #:date "2021"
+             #:url "https://blog.racket-lang.org/2021/01/racket-status.html")
 
+  (bib-entry #:key "dybvig09"
+             #:author "R Kent Dybvig"
+             #:title "The Scheme Programming Language, Four th Edition"
+             #:date "2009"
+             #:url "https://www.scheme.com/tspl4/")
 
+  (bib-entry #:key "dybvig22"
+             #:author "R Kent Dybvig"
+             #:title "Chez Scheme Version 9 User's Guide"
+             #:date "2022"
+             #:url "https://cisco.github.io/ChezScheme/csug9.5/csug.html")
 )

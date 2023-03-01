@@ -11,11 +11,14 @@
 原文格式是doc文档和PDF文档。
 
 原文完成提交后，我又转成了Racket的Scribble文档格式，以便后期维护。
-然后名字进行了调整，因为我认为文章的主旨始终是在围绕着“中文对于
+
+继而对名字进行了调整，因为我认为文章的主旨始终是在围绕着“中文对于
 Lisp编程语言的意义”进行讨论的，名语言的实现也大抵如此。
 
-为了方便建立代码仓库，所以起了英文名“SOICAIOL”，意思是“Significance Of Imposing
-Chinese As Interface Of Lisp”。后期也可能提取关键内容发布到Racket官方的英文论坛
-里面进行讨论，听取意见后再反复优化调整。
+为了方便建立代码仓库，所以又起了英文名“SOICAIOL”，意思是“Significance Of Imposing
+Chinese As Interface Of Lisp”。
+
+我想，后期我也可能在合适的时候，提取关键内容发布到Racket官方的英文论坛
+里面进行讨论，听取意见后再优化调整。
 
 源代码：@url{https://github.com/yanyingwang/SOICAIOL}
