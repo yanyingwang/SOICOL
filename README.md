@@ -1,3 +1,4 @@
 SOICAIOL
 =============================================================
-Significance Of Imposing Chinese As Interface Of Lisp/中文之于Lisp编程语言之意义
+Significance Of Imposing Chinese As Interface Of Lisp <br>
+中文对于Lisp编程语言的意义
