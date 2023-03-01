@@ -268,13 +268,4 @@ Racket 甚至 Scheme 提供了条件：当名语言完成 Racket 和 Scheme 编
 @item{mapping-lang：名语言为了借用 Racket 的标准库，需要做大量的翻译。又因翻译文件重在数据，其代码逻辑比较简单，故此另外实现了一个简单的模板用以编写翻译映射表。}
 ]
 @subsection{代码实例展示}
-@filebox{file1.rkt
-@codeblock|{
-#!/usr/bin/env racket
-#lang ming
-(名 某物 (􏿴 "苹果" "香蕉" "梨"))
-(示 某物)
-(示 (甲 某物))
-}|
-}
-更多详细的代码实例和库使用方法在名语言的官方API文档中有详细说明，这里不再赘述。
+名语言的官方API文档中有详细说明，这里不再赘述。
