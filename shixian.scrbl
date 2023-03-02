@@ -2,8 +2,10 @@
 
 @title[#:tag "sheji"]{实现}
 
-@(require (file "css/fonts.css.rkt"))
+@(require (file "styles/fonts.css.rkt")
+          (file "styles/hj.js.rkt"))
 @css/wenquan-extend-font
+@js/highlight-jumping
 
 本章将阐述如何把汉语和汉字融入进 Lisp的S-表达式的语法中并发挥
 出汉字汉语的优势（名语言要如何设计实现）。

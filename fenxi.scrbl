@@ -1,5 +1,7 @@
 #lang scribble/manual
 
+@(require (file "styles/hj.js.rkt"))
+@js/highlight-jumping
 
 @title[#:tag "fenxi"]{分析}
 中文是否可以用于编程语言呢？如果把中文用在编程语言的人机交互接口上

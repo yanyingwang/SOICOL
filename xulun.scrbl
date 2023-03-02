@@ -1,5 +1,7 @@
 #lang scribble/manual
 
+@(require (file "styles/hj.js.rkt"))
+@js/highlight-jumping
 
 @title[#:tag "xulun"]{绪论}
 

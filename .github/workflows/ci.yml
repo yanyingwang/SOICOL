@@ -27,7 +27,7 @@ jobs:
       - name: build docs
         run: |
           raco scribble --htmls \
-                        ++extra css/WenQuanYiMicroHeiExtend-Regular.woff2 \
+                        ++extra styles/WenQuanYiMicroHeiExtend-Regular.woff2 \
                         --dest-name doc \
                         ++main-xref-in \
                         --redirect-main https://docs.racket-lang.org/ \
