@@ -6,7 +6,7 @@
 
 
 @; @defmodule[soicaiol]
-Significance Of Imposing On Lisp @linebreak{}
+Significance Of Imposing Chinese On Lisp @linebreak{}
 中文对于Lisp编程语言的意义
 
 @(table-of-contents)
