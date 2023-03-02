@@ -24,7 +24,7 @@ Racket平台的发行版本是免费且开放源代码的，以GNU宽通用公�
 发布系统）。
 
 基于Racket实现的Scribble可以用来构建HTML或PDF（依赖
-LaTeX），Racket 官方文档就是基于这个语言来编写的。
+LaTeX），Racket官方文档就是基于这个语言来编写的。
 Racket从8.0的版本开始，将默认的编译和运行系统从Racket BC改为了Racket CS@cite{matthew21}，
 RacketCS基于Chez Scheme编程语言@cite{dybvig09}@cite{dybvig22}的实现，Chez
 Scheme是一个由R. Kent Dybvig开发的Scheme实现，Chez Scheme是最
@@ -36,17 +36,17 @@ Scheme是一个由R. Kent Dybvig开发的Scheme实现，Chez Scheme是最
 Racket 的开发基于以下原则：
 @itemlist[
 @item{编程语言的目的是表述和解决问题，这一过程通常在特定的情境中发
-生，该情境有一定的描述语言，因此 Racket 应该是能够创制新编程语
+生，该情境有一定的描述语言，因此Racket应该是能够创制新编程语
 言的编程语言；}
 @item{基于上述的表述问题的方式，问题系统可视为多语言的相互联系的组件
-的集合，Racket 应当能够提供足够的保护机制，允许实现各种语言的完
+的集合，Racket应当能够提供足够的保护机制，允许实现各种语言的完
 26整特性；}
 @item{与问题解决相关的在语言之外的机制，如项目和资源的管理，也可被
-Racket 转换为语言构造。}
+Racket转换为语言构造。}
 ]
 
-@subsection{原因总结}
-总体来说，Racket 的以下特点令其非常适合用于实现汉语编程语言：
+@subsection{Racket的显著优点}
+总体来说，Racket的以下特点令其非常适合用于实现汉语编程语言：
 @itemlist[
 @item{Racket编程语言的设计初衷就是要提供一种用于创造设计与实现其它编
 程语言的平台，其势必已经有了丰富的为实现编程语言而所需的各种特
@@ -55,7 +55,7 @@ Racket 转换为语言构造。}
 域，这有利于获取学术领域最新的研究成果并有利于新研究成果的传
 播；}
 @item{Racket编程语言是Scheme的方言，Scheme是Lisp的方言，Racket
-继承并发展了Lisp和Scheme的 S-表达式语法，S-表达式的极简语法
+继承并发展了Lisp和Scheme的S-表达式语法，S-表达式的极简语法
 使得新实现不需要关注语法的实现，并给汉语留下了极大的语义层面上
 的发挥空间；}
 @item{Racket是Scheme语言的实现方言里面函数库最为丰富的实现之一；}
@@ -65,19 +65,19 @@ Scribble语言并与原文档做无缝链接跳转。}
 ]
 
 @section{名语言}
-为叙述方便和代码实现上的方便，上文所述“基于 Lisp 的 S-表达式而实现
+为叙述方便和代码实现上的方便，上文所述“基于 Lisp的S-表达式而实现
 的汉语编程语言”我们将在下文统一称之为“名语言”。
 
 “名”有命名之意，即对编程语言里面的抽象概念在自然语言层面上的赋名
 化。
 
 @subsection{语法：S-表达式}
-因为是基于 Lisp 的S-表达式而实现的汉语编程语言”S-表达式的极简语法
+因为是基于Lisp的S-表达式而实现的汉语编程语言，S-表达式的极简语法
 使得新实现不需要关注语法的实现，并给汉语留下了极大的语义层面上的发挥
-空间，所以名语言的语法采用 S-表达式。
+空间，所以名语言的语法采用S-表达式。
 
-相较于现今主流的编程语言，名语言的语法遗传自 Lisp 编程语言，是极其
-简单的，称为 S-表达式：
+相较于现今主流的编程语言，名语言的语法遗传自Lisp编程语言，是极其
+简单的，称为S-表达式：
 @itemlist[
 @item{
 它首先由括号约定执行优先级；
@@ -103,7 +103,7 @@ Scribble语言并与原文档做无缝链接跳转。}
 @subsection{汉字造字法：基于其发展出的数据结构名}
 毋庸置疑，数据结构是编程语言的基石。
 
-名语言的数据结构可以直接借用 Racket 语言的内部数据结构，Racket 因为用
+名语言的数据结构可以直接借用Racket语言的内部数据结构，Racket因为用
 于学术研究领域的原因，拥有非常多的数据结构，如：Equality、Strings、
 Booleans、Characters、Numbers、SymbolsStrings、Byte、Regular Expressions、
 Keywords 、Pairs and Lists、Mutable Pairs and Lists、
@@ -120,7 +120,7 @@ list的末尾也是数据，则它同时是pair又是list；
 }
 @item{
 list如果是一个二维list，则它同时也是association list（类似散列
-表）。而目前 Racket 中的英文名并不能明确的反映出这种各个数据结
+表）。而目前Racket中的英文名并不能明确的反映出这种各个数据结
 构之间的演变关系。
 }
 ]
@@ -155,7 +155,6 @@ pair、list、vector、association list、hash会发现，它们形态虽有不�
 数据结构概念之间的逻辑关系的。
 
 
-
 @subsection{函数命名规则：基于汉字造字法和汉语组词规范发展出的一种轻量级类型指
 示方法}
 
@@ -167,15 +166,15 @@ pair、list、vector、association list、hash会发现，它们形态虽有不�
 对代码进行形式转换。}
 ]
 
-Racket 作为一种动态编程语言，在代码的书写中并无类型指代，虽然已经
-有了基于 Racket 语言的扩展类型系统库，称为 Typed Racket。
+Racket作为一种动态编程语言，在代码的书写中并无类型指代，虽然已经
+有了基于Racket语言的扩展类型系统库，称为Typed Racket。
 
 而名语言是依附于动态编程的，除了造字方法来优化Racket编程语言里面已有
 的抽象数据概念外，与此同时发挥了汉字造字法的精神和文言文精简化、浓缩化的优点，
 对于函数命名，名语言也引入发展了一套通过函数名暗示输入参数类型和输出
 参数类型的方法。
 
-对于名语言，中文的单字表意特性更利于构造命名，中文化有利于 Lisp 代
+对于名语言，中文的单字表意特性更利于构造命名，中文化有利于Lisp代
 码更易被读懂的关键就是把函数的命名规范化，给予函数命名一种命名规则。
 
 函数名的命名规则，在名语言的官方API文档上有详细记述, 比如
@@ -194,7 +193,7 @@ Racket 作为一种动态编程语言，在代码的书写中并无类型指代�
                )]
 
 @bold{具体库的规则}：
-除总命名规则外，对于具体的库，会有额外的规则。比如对于 pair 和 list
+除总命名规则外，对于具体的库，会有额外的规则。比如对于pair和list
 的汉化库，另有：
 @tabular[#:style 'boxed
          #:column-properties '(left left)
@@ -209,37 +208,37 @@ Racket 作为一种动态编程语言，在代码的书写中并无类型指代�
 
 
 @subsection{翻译程序}
-因为语法和数据结构是和 Racket 语言相同的，名语言将会利用 Racket 语
-言的内部特性建立一个翻译层程序，将中文命名转译为 Racket 语言。
+因为语法和数据结构是和Racket语言相同的，名语言将会利用Racket语
+言的内部特性建立一个翻译层程序，将中文命名转译为Racket语言。
 
-又因为 Racket 语言拥有非常良好的模块关系，名语言可以针对 Racket 语
+又因为Racket语言拥有非常良好的模块关系，名语言可以针对Racket语
 言的标准库、扩展库来进行中英文的翻译映射。
 
-另又因 Racket 语言的函数编程特性，翻译可以被轻松的作为扩展库而被重
-新引入进 Racket 语言并被使用。
+另又因Racket语言的函数编程特性，翻译可以被轻松的作为扩展库而被重
+新引入进Racket语言并被使用。
 
 @subsection{文档程序}
 因为翻译程序的设计，名语言内部必然是存在一个个中英文映射表的，又因
-Racket 语言的编写文档所基于的 Scribble 语言本质上是一个 Racket 语言的
-库，因此名语言可以基于 Scribble 语言实现并和 Racket 语言的官方文档进行
+Racket语言的编写文档所基于的Scribble语言本质上是一个Racket语言的
+库，因此名语言可以基于Scribble语言实现并和Racket语言的官方文档进行
 无缝衔接跳转，以利于名语言文档的查看和溯源。
 
 @subsection{扩展库}
-因为 Racket 语言实质上是 Scheme 语言的方言，Scheme 遵从一种极简哲
-31学，所有的代码可以回归到最基础的几个函数定义上，这为名语言的汉化提供
+因为Racket语言实质上是Scheme语言的方言，Scheme遵从一种极简哲
+学，所有的代码可以回归到最基础的几个函数定义上，这为名语言的汉化提供
 了极大便利：
 @itemlist[
 @item{
-在不完全汉化的前提下，名语言可以作为函数库被引入 Racket 部分的
+在不完全汉化的前提下，名语言可以作为函数库被引入Racket部分的
 使用；
 }
 @item{
 在不完全汉化的前提下，可以基于名语言来写自身的扩展库，只要扩展
-库所使用的 Racket 库是已经汉化了的；
+库所使用的Racket库是已经汉化了的；
 }
 @item{
-Racket 遵从 Scheme 的极间原则，此原则为将来名语言在底层上摆脱
-Racket 甚至 Scheme 提供了条件：当名语言完成 Racket 和 Scheme 编
+Racket遵从Scheme的极间原则，此原则为将来名语言在底层上摆脱
+Racket甚至Scheme提供了条件：当名语言完成Racket和Scheme编
 程语言全部的编程概念本地化后，条件即成熟。
 }
 ]
@@ -263,9 +262,9 @@ Racket 甚至 Scheme 提供了条件：当名语言完成 Racket 和 Scheme 编
 @hyperlink["http://www.yanying.wang/ming/ming-core.html" "名语言的核心库"]是
 名语言的核心代码，主要包含：
 @itemlist[
-@item{ming/core：用于为名语言名化（汉化）一个Racket库的，核心为一个用Racket 编程语言实现的称之为mingize的函数。}
+@item{ming/core：用于为名语言名化（汉化）一个Racket库的，核心为一个用Racket编程语言实现的称之为mingize的函数。}
 @item{ming/scribble：用来从名语言的翻译表中生成翻译文档的，核心分别为用Racket语言实现的defchinesize和defmapping函数。}
-@item{mapping-lang：名语言为了借用 Racket 的标准库，需要做大量的翻译。又因翻译文件重在数据，其代码逻辑比较简单，故此另外实现了一个简单的模板用以编写翻译映射表。}
+@item{mapping-lang：名语言为了借用Racket的标准库，需要做大量的翻译。又因翻译文件重在数据，其代码逻辑比较简单，故此另外实现了一个简单的模板用以编写翻译映射表。}
 ]
 @subsection{代码实例展示}
 名语言的官方API文档中有详细说明，这里不再赘述。
