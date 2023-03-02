@@ -1,12 +1,12 @@
 #lang scribble/manual
 
 
-@title[#:style '(toc)]{SOICAIOL}
+@title[#:style '(toc)]{SOICOL}
 @author[(author+email (hyperlink "https://yanying.wang" "Yanying Wang") "yanyingwang1@gmail.com")]
 
 
 @; @defmodule[soicaiol]
-Significance Of Imposing Chinese As the Interface Of Lisp @linebreak{}
+Significance Of Imposing On Lisp @linebreak{}
 中文对于Lisp编程语言的意义
 
 @(table-of-contents)

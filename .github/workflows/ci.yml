@@ -20,9 +20,9 @@ jobs:
           variant: ${{ matrix.racket-variant }}
           version: ${{ matrix.racket-version }}
       - name: Installing pkgs
-        run: raco pkg install --no-docs --auto --name soicaiol
+        run: raco pkg install --no-docs --auto --name soicol
       - name: Compiling and building its docs
-        run: raco setup --check-pkg-deps --unused-pkg-deps soicaiol
+        run: raco setup --check-pkg-deps --unused-pkg-deps soicol
 
       - name: build docs
         run: |
