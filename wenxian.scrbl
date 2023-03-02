@@ -57,7 +57,7 @@
              #:date "1996"
              #:url "https://www.aisixiang.com/data/127276.html")
 
-(bib-entry #:key "Matthias2006"
+(bib-entry #:key "Matthias06"
              #:author "Matthias Felleisen, Matthew Flatt"
              #:title "Programming Languages and Lambda Calculi"
              #:date "2006"
