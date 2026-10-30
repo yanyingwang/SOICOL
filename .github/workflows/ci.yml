@@ -27,12 +27,20 @@ jobs:
       - name: build docs
         run: |
           raco scribble --htmls \
-                        ++extra styles/WenQuanYiMicroHeiExtend-Regular.woff2 \
-                        --dest-name doc \
-                        ++main-xref-in \
-                        --redirect-main https://docs.racket-lang.org/ \
-                        --redirect https://docs.racket-lang.org/local-redirect/index.html \
-                        index.scrbl
+              ++extra styles/WenQuanYiMicroHeiExtend-Regular.woff2 \
+              --dest-name doc \
+              ++main-xref-in \
+              --redirect-main https://docs.racket-lang.org/ \
+              --redirect https://docs.racket-lang.org/local-redirect/index.html \
+              index.scrbl
+          raco scribble --htmls \
+              ++extra styles/WenQuanYiMicroHeiExtend-Regular.woff2 \
+              --dest doc \
+              ++main-xref-in \
+              --redirect-main https://docs.racket-lang.org/ \
+              --redirect https://docs.racket-lang.org/local-redirect/index.html \
+              en.scrbl
+
                         # --redirect-main file:///home/yanying/racket/doc/index.html \  # for localhost doc
       - name: Deploy to GitHub Pages
         if: success()

@@ -223,4 +223,4 @@ Consider the Racket functions `make-list` and `build-list` mentioned earlier. If
                (list @code{(复链 3 'foo)} @code{'(foo foo foo)})
                (list @code{(复链 6 'foo)} @code{'(foo foo foo foo foo foo )})
                (list @code{(序链 5 values)} @code{'(0 1 2 3 4)})
-               (list @code{(序链 10 values)} @code{'(0 1 2 3 4 5 6 7 8 9)})]
+               (list @code{(序链 10 values)} @code{'(0 1 2 3 4 5 6 7 8 9)}))]
