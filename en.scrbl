@@ -9,7 +9,7 @@
 Significance Of Imposing Chinese On Lisp
 
 @subscript{
-This English translation was produced by AI on October 30, 2026, based on the @hyperlink["/index.html" "original Chinese version"] and is provided for the convenience of readers who do not read Chinese.
+This English translation was produced by AI on October 30, 2026, based on the @hyperlink["/SOICOL/index.html" "original Chinese version"] and is provided for the convenience of readers who do not read Chinese.
 }
 
 Based on: @url{https://www.yanying.wang/2022/10/the-significance-of-using-chinese-instead-of-english-as-the-interface-of-lisp-for-human.html}

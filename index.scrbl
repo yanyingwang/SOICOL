@@ -6,7 +6,7 @@
 @title[#:style '(toc)]{SOICOL}
 @author[(author+email (hyperlink "https://yanying.wang" "Yanying Wang") "yanyingwang1@gmail.com")]
 
-@subscript{Non-Chinese speakers, please jump to @hyperlink["/en/index.html" "AI Translation"].}
+@subscript{Non-Chinese speakers, please jump to @hyperlink["/SOICOL/en/index.html" "AI Translation"].}
 
 中文对于Lisp编程语言的意义（Significance Of Imposing Chinese On Lisp）
 
